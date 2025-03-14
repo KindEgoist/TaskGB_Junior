@@ -28,7 +28,7 @@ public class ClientHandler implements Runnable {
             }
 
             server.broadcast(clientName + " подключился к чату.", "Сервер", null);
-            server.log(clientName + " подключился."); // Логируем в окне сервера!
+            server.log(clientName + " подключился.");
 
             String message;
             while ((message = in.readLine()) != null) {
@@ -37,7 +37,7 @@ public class ClientHandler implements Runnable {
         } catch (IOException e) {
             if (clientName != null) {
                 server.broadcast(clientName + " отключился.", "Сервер", null);
-                server.log(clientName + " отключился."); // Логируем в окне сервера!
+                server.log(clientName + " отключился.");
             }
         } finally {
             disconnect();

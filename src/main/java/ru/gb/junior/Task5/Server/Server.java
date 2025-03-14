@@ -72,7 +72,7 @@ public class Server implements ChatServer, Runnable {
                 }
             }
         }
-        log(senderName + ": " + message); // Логируем каждое сообщение в сервере!
+        log(senderName + ": " + message);
     }
 
     @Override

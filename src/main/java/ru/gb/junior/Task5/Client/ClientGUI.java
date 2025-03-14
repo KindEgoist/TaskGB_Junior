@@ -73,7 +73,7 @@ public class ClientGUI {
     private void sendMessage() {
         String message = inputField.getText();
         inputField.setText("");
-        client.sendMessage(message); // Исправлено!
+        client.sendMessage(message);
     }
 
     private void disconnect() {
